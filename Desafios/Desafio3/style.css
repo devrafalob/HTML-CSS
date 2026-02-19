@@ -1,0 +1,11 @@
+@charset " UTF-8";
+body{
+    text-align: center;
+}
+h1{
+    font: italic bold 3em Verdana, sans-serif ;
+}
+p{
+    font: lighter 1em Arial, serif;
+    color: black;
+}
