@@ -1,13 +1,4 @@
 @charset "UTF-8";
-body{
-    background-color: #bcaf9c;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-h1,h2{
-    color: #14281D;
-    font-family: Arial, Helvetica, sans-serif;
-}
 p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3em;
@@ -15,12 +6,47 @@ p{
     margin: 5px 50px;
 }
 h1{
-    background-color: #364156;
     width: 300px;
     text-align: center;
     margin: 50px;
     padding: 10px 5px;
     font-weight: bolder;
+}
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 10px;
+    background-color: rgb(83, 83, 83);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+header{
+    background-color: white;
+}
+#cabecalho{
+    display: flex;
+    margin: auto;
+}
+nav{
+    text-align: right;
+    font-weight: bolder;
+    background-color: black;
+    padding: 3px;
+}
+nav > a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+nav > a:hover{ 
+    text-decoration: underline;
+}
+section{
+    background-color: white;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 7px;
 }
 .conteudos{
     margin: auto;
@@ -28,16 +54,20 @@ h1{
     text-align: center;
     padding: 20px;
 }
-.conteudos:hover{
-    background-color: #696258;
+.conteudos  > a > img:hover{
+    background-color: gray ;
+    margin-bottom: 5px;
 }
 .conteudo{
     margin: 5px;
 }
-li{
-    display: inline-block;
+footer{
+    background-color: black;
+    text-align: right;
 }
-ol{
-    margin: auto;
+footer > p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
     text-align: center;
 }
