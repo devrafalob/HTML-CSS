@@ -1,0 +1,85 @@
+@charset "UTF-8"; 
+
+body{
+    background-color: rgb(127, 255, 191);
+}
+header{
+    background-image: linear-gradient(to bottom, rgb(15, 233, 131), rgb(2, 87, 2));
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 0px 100px;
+}
+
+nav{
+    margin: 0px 10px;
+    text-align: left;
+}
+
+nav > a{
+    margin-right: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+nav > a:hover{
+    background-color: rgb(2, 66, 2);
+}
+
+main > h1, h2{
+    color: rgb(2, 87, 2);
+}
+h2{
+    background-image: linear-gradient(to right, rgba(6, 187, 6, 0.185), rgba(15, 233, 131, 0.021));
+    padding: 2px;
+}
+main > p{
+    text-align: justify;
+}
+#extra{
+    background-color: rgb(191, 241, 220);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#extra > h3{
+    background-color: rgb(28, 105, 73);
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+#extra > p { 
+    margin: 5px 10px;
+}
+footer>p{
+    text-align: center;
+    background-color: rgb(2, 87, 2);
+    color: white;
+}
+main > img{
+    align-items: center;
+}
+b{
+    color: rgb(2, 87, 2);
+    font-size: bolder;
+}
+main > section > p > a{
+    background-color: rgba(5, 150, 5, 0.527) ;
+    text-decoration: none;
+    padding: 2px;
+}
+/*
+Substituir por um emote
+*/
+main > section > p > a::after{
+    content: ':link';
+}
+main > section > p > a:hover{
+    text-decoration: underline;
+}
