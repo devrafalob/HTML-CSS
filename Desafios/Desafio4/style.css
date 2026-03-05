@@ -1,21 +1,65 @@
 @charset "UTF-8"; 
 
+/*Para determinar variaveis para facil acesso de dados*/
+:root{
+ --cor1:rgb(15, 233, 131);
+ --cor2: rgb(2, 87, 2);
+ --cor3: rgb(127, 255, 191);
+ 
+ --fonte-destaque: 'Bebas Neue',  cursive;
+ --fonte-android: 'Android', cursive;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rye&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+/*Retirar a configuração padrão do site para margem */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: rgb(127, 255, 191);
+    
 }
+
 header{
     background-image: linear-gradient(to bottom, rgb(15, 233, 131), rgb(2, 87, 2));
     padding: 5px;
     color: white;
     text-align: center;
 }
+header > h1{
+    font-family: var(--fonte-destaque);
+    margin: 30px 0px;
+}
+header p{
+    width: 300px;
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: 15px;
+}
 
 main{
     background-color: white;
     padding: 10px;
-    margin: 0px 100px;
+    margin: auto;
+    max-width: 1200px;
+    
 }
-
+main h1{
+    font-family: var(--fonte-android);
+    color: var(--cor2);
+}
+main h2{
+    font-family: var(--fonte-android);
+}
 nav{
     margin: 0px 10px;
     text-align: left;
@@ -35,6 +79,15 @@ nav > a:hover{
 main > h1, h2{
     color: rgb(2, 87, 2);
 }
+
+#artigo > h1, h2 ,h3, p{
+    margin-bottom: 5px;
+}
+
+#artigo > a{
+    text-decoration: none;
+}
+
 h2{
     background-image: linear-gradient(to right, rgba(6, 187, 6, 0.185), rgba(15, 233, 131, 0.021));
     padding: 2px;
@@ -57,21 +110,26 @@ main > p{
 #extra > p { 
     margin: 5px 10px;
 }
+li{
+    margin-left: 20px;
+}
 footer>p{
     text-align: center;
     background-color: rgb(2, 87, 2);
     color: white;
 }
-main > img{
-    align-items: center;
+img{
+    width: 100%;
 }
 b{
     color: rgb(2, 87, 2);
     font-size: bolder;
 }
-main > section > p > a{
-    background-color: rgba(5, 150, 5, 0.527) ;
+
+a{
+    color: rgb(4, 104, 4) ;
     text-decoration: none;
+    font-weight: bolder;
     padding: 2px;
 }
 /*
