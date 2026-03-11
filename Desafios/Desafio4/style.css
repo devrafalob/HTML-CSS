@@ -64,6 +64,8 @@ main h2{
 nav{
     margin: 0px 10px;
     text-align: left;
+    box-shadow: px 5px 5px rgba(0, 0, 0, 0.26);
+    
 }
 
 nav > a{
@@ -75,6 +77,9 @@ nav > a{
 
 nav > a:hover{
     background-color: rgb(2, 66, 2);
+    color: var(--cor3);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
+    transition-duration: 0.3s;
 }
 
 main > h1, h2{
