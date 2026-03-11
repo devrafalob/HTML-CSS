@@ -50,6 +50,7 @@ main{
     background-color: white;
     padding: 10px;
     margin: auto;
+    /*Responsividade do site*/
     max-width: 1200px;
     
 }
@@ -119,6 +120,7 @@ footer>p{
     color: white;
 }
 img{
+    /*Responsividade das imagens*/
     width: 100%;
 }
 b{
