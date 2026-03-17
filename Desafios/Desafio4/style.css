@@ -29,6 +29,13 @@ body{
     
 }
 
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1em;
+}
+
 header{
     background-image: linear-gradient(to bottom, rgb(15, 233, 131), rgb(2, 87, 2));
     padding: 5px;
