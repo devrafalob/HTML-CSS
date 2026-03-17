@@ -74,7 +74,11 @@ nav{
     box-shadow: px 5px 5px rgba(0, 0, 0, 0.26);
     
 }
-
+.pequeno{
+    max-width: 360px;
+    display: block;
+    margin: auto;
+}
 nav > a{
     margin-right: 5px;
     text-decoration: none;
@@ -112,6 +116,7 @@ main > p{
     background-color: rgb(191, 241, 220);
     border-radius: 10px;
     padding-bottom: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
 }
 #extra > h3{
     background-color: rgb(28, 105, 73);
@@ -123,8 +128,10 @@ main > p{
 #extra > p { 
     margin: 5px 10px;
 }
-li{
-    margin-left: 20px;
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
 }
 footer>p{
     text-align: center;
@@ -147,10 +154,10 @@ a{
     padding: 2px;
 }
 /*
-Substituir por um emote
+    Com emote
 */
 main > section > p > a::after{
-    content: ':link';
+    content: '\1F517';
 }
 main > section > p > a:hover{
     text-decoration: underline;
@@ -167,4 +174,9 @@ iframe{
     display: block;
     margin: auto;
     padding-top: 30px;
+}
+
+footer a{
+    color: var(--cor3);
+
 }
