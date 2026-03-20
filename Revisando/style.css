@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 p{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-align: justify;
     margin: 5px 50px;
 }
@@ -31,12 +35,20 @@ nav{
     text-align: right;
     font-weight: bolder;
     background-color: black;
-    padding: 3px;
+    padding: 10px;
 }
 nav > a{
-    padding-right: 10px;
+    padding: 10px;
     text-decoration: none;
     color: white;
+}
+nav > a:hover{
+    background-color: rgba(128, 128, 128, 0.418);
+    transition-duration: 0.3s;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
 }
 section{
     background-color: white;
@@ -53,6 +65,10 @@ section{
 .conteudos  > a > img:hover{
     background-color: gray ;
     margin-bottom: 5px;
+    transition-duration: 0.3s;
+}
+main li{
+    list-style-position: inside;
 }
 .conteudo{
     margin: 5px;
