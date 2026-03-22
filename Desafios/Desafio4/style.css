@@ -50,7 +50,7 @@ header p{
     width: 300px;
     text-align: center;
     margin-inline: auto;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 main{
