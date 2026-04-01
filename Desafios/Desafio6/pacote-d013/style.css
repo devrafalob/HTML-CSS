@@ -6,6 +6,7 @@
 
 body{
     background: black url(imagens/fundo-madeira.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 .celular{
     width: 307px;
@@ -18,6 +19,14 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+#frame{
+    background-image: url(imagens/tela-home.jpg);
+    position: relative;
+    height: 76%;
+    width: 87%;
+    transform: translate(8%, 17%);
+    background-size: cover;
+}
 .redes{
     width: 50px;
     height: 200px;
@@ -28,8 +37,8 @@ img{
     height: 50px;
     border-radius: 50%;
     margin-bottom: 5px;
-    
 }
-img:hover{
-    
+.redes > picture img:hover{
+    transition-duration: 0.1s;
+    height: 55px;
 }
