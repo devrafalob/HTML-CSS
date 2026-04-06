@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        body > *{
+            background-color: gray;
+            max-width: 1000px;
+            margin: auto;
+        }
+        header{
+            text-align: center;
+            padding: 10px;
+        }
+        fieldset{
+            padding: 5px;
+            margin: 0px 20px;
+
+        }
+        label, input{
+            padding: 5px;
+            margin-left: 5px;
+        }
+        .botao{
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entrevista</h1>
+    </header>
+    <form action="/cadastrar" method="get">
+        <fieldset class="pessoal">
+            <h2>Informações pessoais</h2>
+            <p>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="iNome" required>
+            </p>
+            <p>
+                <label for="DataNascimento">Data de Nascimento</label>
+                <input type="datetime" name="DataNascimento" id="iDataNascimento" required placeholder="01-01-1999" pattern="^$\d[2]">
+                <!-- Estudar regex para pattern - será necessario também para javascript-->
+            </p>
+            <p>
+                <label for="EstadoCivil">Estado Civil:</label>
+                <input type="text" required placeholder="Solteiro, casado, viúvo...">
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <h2>Suas Experiencias</h2>
+            <p>
+                <label for="Experiencias"> Possui Experiencias? Sim</label>
+                <input type="checkbox" name="Experiente" id="iExperiente">
+                <label for="Experiencias">Não</label>
+                <input type="checkbox" name="naoExperiente" id="inaoExperiente">
+            </p>
+        </fieldset>
+        
+        <input type="submit" value="Enviar" class="botao">
+        <input type="reset" value="Limpar" class="botao">
+    </form>
+    
+</body>
+</html>
