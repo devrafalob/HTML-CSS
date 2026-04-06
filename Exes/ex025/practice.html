@@ -20,11 +20,12 @@
         }
         header{
             text-align: center;
-            padding: 10px;
+            margin: 10px;
         }
         fieldset{
             padding: 5px;
             margin: 0px 20px;
+            border: 1px solid lightgray;
 
         }
         label, input{
@@ -41,7 +42,7 @@
     <header>
         <h1>Entrevista</h1>
     </header>
-    <form action="/cadastrar" method="get">
+    <form action="/cadastrar" method="post">
         <fieldset class="pessoal">
             <h2>Informações pessoais</h2>
             <p>
@@ -56,6 +57,11 @@
             <p>
                 <label for="EstadoCivil">Estado Civil:</label>
                 <input type="text" required placeholder="Solteiro, casado, viúvo..." id="EstadoCivil" name="EstadoCivil">
+            </p>
+            <p>
+                <!--Para envio de arquivos deve-se utilizar o metodo post-->
+                <label for="ifoto3x4">Sua foto 3x4:</label>
+                <input type="file" name="foto3x4" id="ifoto3x4">
             </p>
             
         </fieldset>
