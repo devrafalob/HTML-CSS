@@ -42,7 +42,7 @@
     <header>
         <h1>Entrevista</h1>
     </header>
-    <form action="/cadastrar" method="post">
+    <form action="/cadastrar" method="post" autocomplete="on">
         <fieldset class="pessoal">
             <h2>Informações pessoais</h2>
             <p>
@@ -89,6 +89,14 @@
                 <input type="radio" name="Experiente" id="naoExperiente" value="Não">
                 <label for="naoExperiente">Não</label>
                 
+            </p>
+            <p>
+                <label for="iexp">Cargo:</label>
+                <input type="text" name="cargo" list="lstCargo" id="iexp">
+                <datalist id="lstCargo">
+                    <option value="">Gerente</option>
+                    <option value="">Desenvolvedor</option>
+                </datalist>
             </p>
         </fieldset>
 
