@@ -12,6 +12,9 @@
     menu > ul > li {
         display: inline-block;
     }
+    menu a{
+        padding: 10px;
+    }
     main{
         max-width: 65vw;
     }
