@@ -7,18 +7,42 @@
     <link rel="shortcut icon" href="../Desafio7/imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaQueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-
             </div>
+
             <div id="formulario">
                    <h1>Login</h1> 
                    <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e fazer as configurações no seu ambiente</p>
-                   <form action="/login" method="post">
 
+                   <form action="/login" method="post" autocomplete="on">
+                        <div class="campo">
+                            <span class="material-symbols-outlined">
+                                    contact_mail
+                            </span>
+                            <input type="email" name="login" id="ilogin" placeholder="Seu email" autocomplete="email" maxlength="30" required>
+                            <label for="ilogin">
+                                Login
+                            </label>
+                        </div>
+
+                        <div class="campo">
+                            <span class="material-symbols-outlined">
+                                    password
+                            </span>
+                            <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20"> 
+                            <label for="isenha">
+                                Senha
+                            </label>
+                        </div>
+                        <input type="submit" value="Entrar">
+                        <a href="esqueci.html">
+                            Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                        </a>
                    </form>
             </div>
         </section>
