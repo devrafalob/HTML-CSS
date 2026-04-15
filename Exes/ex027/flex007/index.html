@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box order</title>
+    <style>
+        .container{
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
+        }
+        .item{
+            background-color: skyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #I1{
+            order: 2;
+            align-self: flex-end;
+        }
+        #I2{
+            order: 3;
+            align-self: center;
+        }
+        #I3{
+            order: 5;
+            align-self: auto;
+            /*auto = padrao do pai
+            
+            o default sera auto, logo tudo que for configurado no pai será seguido por consequencia
+            */
+        }
+        #I4{
+            order: 1;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="I1">A</div>
+        <div class="item" id="I2">B</div>
+        <div class="item" id="I3">C</div>
+        <div class="item" id="I4">D</div>
+
+    </div>
+</body>
+</html>
