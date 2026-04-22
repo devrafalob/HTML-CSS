@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex basis</title>
+    <style>
+        .pai{
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: salmon;
+        }
+        .filho{
+            background-color: skyblue;
+            flex-basis: 250px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        #f1{
+            flex-shrink: 0; /*nao vai diminuir*/
+            flex-grow: 1;
+        }
+        #f2{    
+            flex-shrink: 2;
+            flex-grow: 1;
+        }
+        #f3{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho" id="f1">A</div>
+        <div class="filho" id="f2">B</div>
+        <div class="filho" id="f3">C</div>
+    </div>
+</body>
+</html>
