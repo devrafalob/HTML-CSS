@@ -51,6 +51,8 @@
         background-color: white;
         border-radius: 5px;
         padding: 10px;
-        margin: 5px;
+        margin: auto;
+
+        max-width: 600px;
     }
 
